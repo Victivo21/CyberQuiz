@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>CyberQuiz</title>
+</head>
+<body>
+
+    <main class="quiz">
+
+        <section id="inicio">
+            <h1>Bem-vindo ao "CyberQuiz"</h1>
+            <h2>Venha testar seus conhecimentos em Cybersegurança!!</h2>
+            <p>Neste jogo você responder perguntas sobre cybersegurança e sobre como funciona a proteção do seu computador</p>
+            <button class="botao" id="btnComecar">Começar quiz</button>
+        </section>
+
+    <!--Primeira pergunta-->
+    <section id="jogo" class="hidden">
+    <div class="barra"><div id="progresso"></div></div>
+    <div class="contador" id="contador"></div>
+    <h2 id="pergunta">O que é cibersegurança?</h2>
+    <div id="opcoes"></div>
+    <div class="rodape">
+      <button class="botao hidden" id="btnProxima">Próxima</button>
+    </div>
+  </section>
+
+  <section id="fim" class="hidden">
+    <h1>Resultado</h1>
+    <div class="placar" id="placar"></div>
+    <p id="mensagem"></p>
+    <button class="botao" id="btnReiniciar">Jogar de novo</button>
+  </section>
+
+  </main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
