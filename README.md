@@ -1,7 +1,7 @@
 # Desenvolvimento Front-End - TechQuiz
 
 ## Trabalho Final em Grupo
-    Criar um site-quiz com perguntas sobre tecnologia 
+Criar um site-quiz com perguntas sobre tecnologia 
 
 ## Integrantes do grupo:
  1. Bruno Tadeu
@@ -10,10 +10,10 @@
  4. Vinicius Conceição 
 
 ## Tema do Quiz
-    **Cybersegurança**
+    Cybersegurança
 
 ## Nome do Quiz
-    **CyberQuiz**
+    CyberQuiz
 
 ## Descriçao 
     O quiz funcionara com um sistema simples de pontuação, a cada pergunta certa +1 pontos, a cada pergunta errada -1 ponto. Podendo ter pontuação negativa. 
