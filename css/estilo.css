@@ -1,0 +1,194 @@
+:root {
+  --fundo: #000000;
+  --cartao: rgba(0, 12, 0, .88);
+  --texto: #b6ffc8;          /* verde bem claro: contraste altíssimo sobre preto */
+  --suave: #5dd97a;
+  --borda: #00b82e;
+  --borda-suave: #0b4a1a;
+  --destaque: #00ff41;       /* verde Matrix */
+  --no-destaque: #000000;    /* texto sobre fundo verde */
+  --certo: #00ff41;
+  --certo-bg: #003d12;
+  --errado: #ff5d73;
+  --errado-bg: #3a0a14;
+  --fonte: "Courier New", Courier, "Lucida Console", monospace;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: var(--fonte);
+}
+
+/* Chuva de caracteres no fundo (decorativa) */
+#chuva {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: .45;
+  pointer-events: none;
+}
+
+.quiz {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 560px;
+  background: var(--cartao);
+  border: 2px solid var(--destaque);
+  border-radius: 4px;
+  padding: 28px;
+  box-shadow: 0 0 12px rgba(0, 255, 65, .5), 0 0 40px rgba(0, 255, 65, .2);
+  overflow-wrap: anywhere;
+}
+
+h1, h2 { color: var(--destaque); text-shadow: 0 0 8px rgba(0, 255, 65, .6); }
+h1 { margin: 0 0 8px; font-size: 1.6rem; text-transform: uppercase; letter-spacing: 2px; }
+h2 { margin: 0 0 20px; font-size: 1.2rem; line-height: 1.4; }
+h1::before { content: "> "; }
+p { color: var(--suave); line-height: 1.5; }
+a { color: var(--destaque); }
+label { display: block; font-weight: 700; margin-bottom: 6px; color: var(--destaque); }
+
+/* Barra de progresso */
+.barra { height: 8px; background: var(--borda-suave); border: 1px solid var(--borda); margin-bottom: 8px; }
+.barra div { height: 100%; width: 0; background: var(--destaque); box-shadow: 0 0 8px var(--destaque); transition: width .3s; }
+.contador { font-size: .85rem; color: var(--suave); margin-bottom: 16px; }
+
+/* Campo de texto */
+input[type="text"] {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  font: inherit;
+  color: var(--destaque);
+  background: #000;
+  border: 2px solid var(--borda);
+  border-radius: 4px;
+  caret-color: var(--destaque);
+}
+.erro { color: var(--errado); font-weight: 700; margin-top: 0; }
+
+/* Alternativas */
+.opcao {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  font: inherit;
+  color: var(--texto);
+  background: #000;
+  border: 2px solid var(--borda);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border-color .15s, background .15s, box-shadow .15s;
+}
+.opcao:hover:not(:disabled) {
+  border-color: var(--destaque);
+  background: var(--certo-bg);
+  box-shadow: 0 0 10px rgba(0, 255, 65, .5);
+}
+
+/* Foco visível em todos os controles */
+.opcao:focus-visible,
+.botao:focus-visible,
+input:focus-visible,
+a:focus-visible,
+h1:focus-visible,
+h2:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
+/* Estados: cor + estilo de borda + ícone/texto no botão */
+.opcao.certa  { border: 3px solid var(--certo);  background: var(--certo-bg); font-weight: 700; color: var(--certo); }
+.opcao.errada { border: 3px dashed var(--errado); background: var(--errado-bg); color: var(--errado); }
+.opcao:disabled { cursor: default; }
+
+/* Feedback */
+.feedback {
+  margin-top: 16px;
+  padding: 14px 16px;
+  border: 2px solid var(--borda);
+  border-radius: 4px;
+  background: rgba(0, 40, 10, .6);
+}
+.feedback p { margin: 0 0 8px; }
+.status { font-weight: 700; color: var(--destaque); }
+
+/* Botões */
+.botao {
+  padding: 12px 24px;
+  font: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--no-destaque);
+  background: var(--destaque);
+  border: 2px solid var(--destaque);
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 255, 65, .5);
+}
+.botao:hover { background: #000; color: var(--destaque); }
+
+.rodape { margin-top: 16px; display: flex; justify-content: flex-end; min-height: 46px; }
+.placar { font-size: 3rem; font-weight: 700; margin: 8px 0; color: var(--destaque); text-shadow: 0 0 12px var(--destaque); }
+#ranking { color: var(--texto); line-height: 1.8; padding-left: 28px; margin-bottom: 20px; }
+
+.hidden { display: none; }
+
+/* Respeita quem prefere menos animação */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+  #chuva { display: none; }
+  @media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+  #chuva { display: none; }
+  .logo-cursor { animation: none; }
+}
+}
+/* Logo CyberQuiz */
+.titulo-boasvindas {
+  font-size: 1rem;
+  text-transform: none;
+  letter-spacing: 1px;
+  color: var(--suave);
+  text-shadow: none;
+  margin-bottom: 16px;
+}
+
+.logo {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 4px 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: none;
+  color: var(--destaque);
+  background: #000;
+  border: 2px solid var(--destaque);
+  border-radius: 4px;
+  text-shadow: 0 0 8px var(--destaque), 0 0 18px rgba(0, 255, 65, .6);
+  box-shadow: 0 0 10px rgba(0, 255, 65, .5), inset 0 0 8px rgba(0, 255, 65, .2);
+  white-space: nowrap;
+}
+
+.logo-colchete { color: var(--suave); text-shadow: none; }
+.logo-quiz { color: #000; background: var(--destaque); padding: 0 4px; margin-left: 2px; text-shadow: none; }
+.logo-cursor { animation: piscar 1s steps(1) infinite; }
+
+@keyframes piscar {
+  50% { opacity: 0; }
+}

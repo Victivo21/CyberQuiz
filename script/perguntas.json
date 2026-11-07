@@ -1,0 +1,211 @@
+[
+  {
+    "texto": "O que é cibersegurança?",
+    "opcoes": [
+      "Criar sites e aplicativos",
+      "Proteger sistemas, redes e dados contra ameaças digitais",
+      "Aumentar a velocidade da internet",
+      "Programar jogos"
+    ],
+    "correta": 1,
+    "explicacao": "Cibersegurança é a prática de proteger sistemas, redes e dados contra ameaças digitais."
+  },
+  {
+    "texto": "O que é phishing?",
+    "opcoes": [
+      "Um golpe que tenta enganar as pessoas para obter informações",
+      "Um método de resfriamento do computador",
+      "Um tipo de memória RAM",
+      "Um protocolo de rede sem fio"
+    ],
+    "correta": 0,
+    "explicacao": "Phishing é um golpe que usa mensagens falsas para enganar a vítima e roubar dados."
+  },
+  {
+    "texto": "Qual destas práticas ajuda a proteger suas contas?",
+    "opcoes": [
+      "Usar a mesma senha em todos os sites",
+      "Compartilhar senhas com amigos",
+      "Utilizar senhas curtas e previsíveis",
+      "Usar senhas longas e exclusivas para cada conta"
+    ],
+    "correta": 3,
+    "explicacao": "Senhas longas e exclusivas evitam que o vazamento de uma conta comprometa as outras."
+  },
+  {
+    "texto": "Para que serve a autenticação de dois fatores (2FA)?",
+    "opcoes": [
+      "Duplicar a velocidade da conexão.",
+      "Adicionar uma etapa de verificação ao login.",
+      "Apagar arquivos temporários.",
+      "Desativar o antivírus."
+    ],
+    "correta": 1,
+    "explicacao": "O 2FA exige uma segunda verificação além da senha, o que dificulta o acesso de invasores mesmo que a senha vaze."
+  },
+  {
+    "texto": "Qual é a função de um firewall?",
+    "opcoes": [
+      "Recuperar arquivos apagados.",
+      "Criar cópias de segurança automaticamente em qualquer situação.",
+      "Filtrar o tráfego de rede conforme regras de segurança.",
+      "Substituir todas as atualizações do sistema."
+    ],
+    "correta": 2,
+    "explicacao": "O firewall permite ou bloqueia o tráfego de rede de acordo com regras de segurança definidas."
+  },
+  {
+    "texto": "O que é malware?",
+    "opcoes": [
+      "Um tipo de monitor.",
+      "Um método de compactação.",
+      "Um programa de edição de texto.",
+      "Um software desenvolvido para realizar ações maliciosas."
+    ],
+    "correta": 3,
+    "explicacao": "Malware (código malicioso) é qualquer software criado para causar danos, roubar dados ou obter acesso indevido."
+  },
+  {
+    "texto": "O que caracteriza um ransomware?",
+    "opcoes": [
+      "Um programa que pode bloquear ou criptografar dados e exigir resgate.",
+      "Uma ferramenta oficial de atualização.",
+      "Um protocolo para enviar e-mails.",
+      "Um sistema de refrigeração."
+    ],
+    "correta": 0,
+    "explicacao": "O ransomware sequestra os dados da vítima, bloqueando ou criptografando arquivos, e cobra um resgate para liberá-los."
+  },
+  {
+    "texto": "Para que serve uma VPN?",
+    "opcoes": [
+      "Garantir anonimato absoluto em qualquer situação.",
+      "Eliminar todos os vírus do dispositivo.",
+      "Criar um túnel de conexão protegido entre o dispositivo e um servidor VPN.",
+      "Substituir a senha do computador."
+    ],
+    "correta": 2,
+    "explicacao": "A VPN cria um túnel criptografado entre o dispositivo e o servidor VPN, mas não garante anonimato total nem remove vírus."
+  },
+  {
+    "texto": "O que é uma vulnerabilidade de segurança?",
+    "opcoes": [
+      "Uma cópia de segurança.",
+      "Uma fraqueza que pode ser explorada para comprometer um sistema.",
+      "Um tipo de cabo de rede.",
+      "Uma senha com muitos caracteres."
+    ],
+    "correta": 1,
+    "explicacao": "Vulnerabilidade é uma falha ou fraqueza em um sistema que pode ser explorada por um atacante."
+  },
+  {
+    "texto": "Por que é importante atualizar programas e sistemas operacionais?",
+    "opcoes": [
+      "Para remover a necessidade de senhas.",
+      "Para desativar todas as proteções.",
+      "Apenas para mudar a aparência.",
+      "Para corrigir falhas e melhorar a segurança."
+    ],
+    "correta": 3,
+    "explicacao": "As atualizações corrigem vulnerabilidades conhecidas, impedindo que sejam exploradas por atacantes."
+  },
+  {
+    "texto": "O que é engenharia social?",
+    "opcoes": [
+      "Manipular pessoas para obter informações ou induzi-las a realizar ações.",
+      "Montar peças físicas de um computador.",
+      "Programar exclusivamente robôs industriais.",
+      "Criar redes sociais."
+    ],
+    "correta": 0,
+    "explicacao": "Na engenharia social o atacante explora a confiança e o comportamento das pessoas, em vez de falhas técnicas."
+  },
+  {
+    "texto": "Qual é a diferença entre criptografia e hash?",
+    "opcoes": [
+      "Ambos sempre permitem recuperar o texto original sem uma chave.",
+      "Hash é usado apenas para acelerar a internet.",
+      "A criptografia pode ser revertida com a chave apropriada; o hash é projetado para ser unidirecional.",
+      "Não existe diferença técnica."
+    ],
+    "correta": 2,
+    "explicacao": "Dados criptografados podem ser decifrados com a chave correta. Já o hash gera uma \"impressão digital\" que não deve ser revertida."
+  },
+  {
+    "texto": "O que é um ataque de força bruta?",
+    "opcoes": [
+      "Um ataque que danifica fisicamente o computador.",
+      "Uma tentativa repetida de adivinhar senhas ou chaves usando muitas combinações.",
+      "Uma atualização de segurança.",
+      "Uma técnica de backup."
+    ],
+    "correta": 1,
+    "explicacao": "Na força bruta o atacante testa muitas combinações de senhas ou chaves até acertar. Senhas longas e exclusivas dificultam esse ataque."
+  },
+  {
+    "texto": "Para que serve o Nmap?",
+    "opcoes": [
+      "Editar vídeos.",
+      "Criar documentos de texto.",
+      "Recuperar senhas de qualquer site automaticamente.",
+      "Descobrir dispositivos, portas e serviços em redes autorizadas."
+    ],
+    "correta": 3,
+    "explicacao": "O Nmap é uma ferramenta de mapeamento de redes que identifica dispositivos, portas abertas e serviços. Deve ser usada só em redes autorizadas."
+  },
+  {
+    "texto": "O que é SQL Injection?",
+    "opcoes": [
+      "Uma falha em que entradas manipuladas podem alterar consultas SQL de uma aplicação.",
+      "Um método de resfriar bancos de dados.",
+      "Um sistema de autenticação de dois fatores.",
+      "Um tipo de cabo USB."
+    ],
+    "correta": 0,
+    "explicacao": "Na SQL Injection, dados manipulados enviados à aplicação alteram as consultas ao banco de dados. A defesa é validar entradas e usar consultas parametrizadas."
+  },
+  {
+    "texto": "Qual é a principal diferença entre HTTP e HTTPS?",
+    "opcoes": [
+      "HTTP sempre é mais seguro.",
+      "HTTPS só funciona em celulares.",
+      "HTTPS usa TLS para proteger a comunicação entre cliente e servidor.",
+      "HTTP não permite carregar imagens."
+    ],
+    "correta": 2,
+    "explicacao": "O HTTPS é o HTTP protegido por TLS, que criptografa os dados e ajuda a autenticar o servidor."
+  },
+  {
+    "texto": "O que caracteriza um ataque DDoS?",
+    "opcoes": [
+      "A instalação de uma atualização oficial.",
+      "O uso de múltiplos sistemas para sobrecarregar um serviço.",
+      "A criação de uma senha segura.",
+      "A criptografia de um único arquivo local."
+    ],
+    "correta": 1,
+    "explicacao": "No DDoS, muitos sistemas enviam tráfego ao mesmo tempo para sobrecarregar um serviço e deixá-lo indisponível."
+  },
+  {
+    "texto": "Qual é uma atitude mais segura ao usar Wi-Fi público?",
+    "opcoes": [
+      "Desativar todas as proteções do dispositivo.",
+      "Compartilhar arquivos com todos os usuários.",
+      "Acessar qualquer link recebido por mensagem.",
+      "Usar HTTPS, manter o dispositivo atualizado e evitar operações sensíveis em redes suspeitas."
+    ],
+    "correta": 3,
+    "explicacao": "Redes públicas são mais arriscadas. Use HTTPS, mantenha o dispositivo atualizado e evite operações sensíveis, como bancos."
+  },
+  {
+    "texto": "Você encontra uma falha de segurança em um site de terceiros. O que deve fazer?",
+    "opcoes": [
+      "Interromper testes não autorizados e comunicar a falha ao responsável.",
+      "Copiar os dados dos usuários para provar que a falha existe.",
+      "Publicar imediatamente todos os detalhes técnicos da falha.",
+      "Tentar acessar as contas de outros usuários."
+    ],
+    "correta": 0,
+    "explicacao": "O correto é parar os testes e avisar o responsável (divulgação responsável). Acessar dados de terceiros ou expor a falha publicamente pode causar danos e ser ilegal."
+  }
+]
