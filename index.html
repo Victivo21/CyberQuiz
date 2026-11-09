@@ -41,6 +41,10 @@
       <div id="feedback" class="feedback hidden" aria-live="polite">
         <p id="statusResposta" class="status"></p>
         <p id="explicacao"></p>
+        <div id="fonteWrap" class="hidden">
+          <p class="fontes-titulo">Saiba mais (abre em nova aba):</p>
+          <ul id="listaFontes"></ul>
+        </div>
       </div>
 
       <div class="rodape">
@@ -74,7 +78,21 @@
       "Programar jogos"
     ],
     "correta": 1,
-    "explicacao": "Cibersegurança é a prática de proteger sistemas, redes e dados contra ameaças digitais."
+    "explicacao": "Cibersegurança é a prática de proteger sistemas, redes e dados contra ameaças digitais.",
+    "fontes": [
+      {
+        "nome": "Cartilha CERT.br (livro)",
+        "url": "https://cartilha.cert.br/livro/"
+      },
+      {
+        "nome": "Check Point",
+        "url": "https://www.checkpoint.com/pt/cyber-hub/cyber-security/what-is-cybersecurity/"
+      },
+      {
+        "nome": "Tecnoblog",
+        "url": "https://tecnoblog.net/536464/o-que-e-ciberseguranca/"
+      }
+    ]
   },
   {
     "texto": "O que é phishing?",
@@ -85,7 +103,21 @@
       "Um protocolo de rede sem fio"
     ],
     "correta": 0,
-    "explicacao": "Phishing é um golpe que usa mensagens falsas para enganar a vítima e roubar dados."
+    "explicacao": "Phishing é um golpe que usa mensagens falsas para enganar a vítima e roubar dados.",
+    "fontes": [
+      {
+        "nome": "Cartilha CERT.br (golpes)",
+        "url": "https://cartilha.cert.br/fasciculos/#golpes"
+      },
+      {
+        "nome": "Tray",
+        "url": "https://tray.com.br/escola/o-que-e-phishing/"
+      },
+      {
+        "nome": "InvestNews",
+        "url": "https://investnews.com.br/geral/roubo-de-dados-o-que-e-phishing-e-como-se-prevenir/"
+      }
+    ]
   },
   {
     "texto": "Qual destas práticas ajuda a proteger suas contas?",
@@ -96,7 +128,21 @@
       "Usar senhas longas e exclusivas para cada conta"
     ],
     "correta": 3,
-    "explicacao": "Senhas longas e exclusivas evitam que o vazamento de uma conta comprometa as outras."
+    "explicacao": "Senhas longas e exclusivas evitam que o vazamento de uma conta comprometa as outras.",
+    "fontes": [
+      {
+        "nome": "Cartilha CERT.br (autenticação)",
+        "url": "https://cartilha.cert.br/fasciculos/#autenticacao"
+      },
+      {
+        "nome": "CISA (PDF em português)",
+        "url": "https://www.cisa.gov/sites/default/files/publications/Portuguese%20-%20Cybersecurity%20Awareness%20Month%202021%20-%20Creating%20Passwords%20Tip%20Sheet.pdf"
+      },
+      {
+        "nome": "Estado de Minas",
+        "url": "https://www.em.com.br/tecnologia/2026/04/7403592-senhas-seguras-o-guia-definitivo-para-blindar-suas-contas-digitais.html"
+      }
+    ]
   },
   {
     "texto": "Para que serve a autenticação de dois fatores (2FA)?",
@@ -107,7 +153,21 @@
       "Desativar o antivírus."
     ],
     "correta": 1,
-    "explicacao": "O 2FA exige uma segunda verificação além da senha, o que dificulta o acesso de invasores mesmo que a senha vaze."
+    "explicacao": "O 2FA exige uma segunda verificação além da senha, o que dificulta o acesso de invasores mesmo que a senha vaze.",
+    "fontes": [
+      {
+        "nome": "Cartilha CERT.br (autenticação)",
+        "url": "https://cartilha.cert.br/fasciculos/#autenticacao"
+      },
+      {
+        "nome": "Canaltech",
+        "url": "https://canaltech.com.br/seguranca/o-que-e-autenticacao-de-dois-fatores-2fa/"
+      },
+      {
+        "nome": "Check Point",
+        "url": "https://www.checkpoint.com/pt/cyber-hub/network-security/what-is-two-factor-authentication-2fa/"
+      }
+    ]
   },
   {
     "texto": "Qual é a função de um firewall?",
@@ -118,7 +178,21 @@
       "Substituir todas as atualizações do sistema."
     ],
     "correta": 2,
-    "explicacao": "O firewall permite ou bloqueia o tráfego de rede de acordo com regras de segurança definidas."
+    "explicacao": "O firewall permite ou bloqueia o tráfego de rede de acordo com regras de segurança definidas.",
+    "fontes": [
+      {
+        "nome": "Cartilha CERT.br (livro)",
+        "url": "https://cartilha.cert.br/livro/"
+      },
+      {
+        "nome": "Check Point",
+        "url": "https://www.checkpoint.com/pt/definitions/what-is-firewall/"
+      },
+      {
+        "nome": "Fortinet",
+        "url": "https://www.fortinet.com/br/resources/cyberglossary/firewall"
+      }
+    ]
   },
   {
     "texto": "O que é malware?",
@@ -129,7 +203,17 @@
       "Um software desenvolvido para realizar ações maliciosas."
     ],
     "correta": 3,
-    "explicacao": "Malware (código malicioso) é qualquer software criado para causar danos, roubar dados ou obter acesso indevido."
+    "explicacao": "Malware (código malicioso) é qualquer software criado para causar danos, roubar dados ou obter acesso indevido.",
+    "fontes": [
+      {
+        "nome": "Cartilha CERT.br (códigos maliciosos)",
+        "url": "https://cartilha.cert.br/fasciculos/#codigos-maliciosos"
+      },
+      {
+        "nome": "Fortinet",
+        "url": "https://www.fortinet.com/br/resources/cyberglossary/malware"
+      }
+    ]
   },
   {
     "texto": "O que caracteriza um ransomware?",
@@ -140,7 +224,17 @@
       "Um sistema de refrigeração."
     ],
     "correta": 0,
-    "explicacao": "O ransomware sequestra os dados da vítima, bloqueando ou criptografando arquivos, e cobra um resgate para liberá-los."
+    "explicacao": "O ransomware sequestra os dados da vítima, bloqueando ou criptografando arquivos, e cobra um resgate para liberá-los.",
+    "fontes": [
+      {
+        "nome": "Cartilha CERT.br (ransomware)",
+        "url": "https://cartilha.cert.br/ransomware/"
+      },
+      {
+        "nome": "Fortinet",
+        "url": "https://www.fortinet.com/br/resources/cyberglossary/ransomware-attacks"
+      }
+    ]
   },
   {
     "texto": "Para que serve uma VPN?",
@@ -151,7 +245,21 @@
       "Substituir a senha do computador."
     ],
     "correta": 2,
-    "explicacao": "A VPN cria um túnel criptografado entre o dispositivo e o servidor VPN, mas não garante anonimato total nem remove vírus."
+    "explicacao": "A VPN cria um túnel criptografado entre o dispositivo e o servidor VPN, mas não garante anonimato total nem remove vírus.",
+    "fontes": [
+      {
+        "nome": "Cartilha CERT.br (privacidade)",
+        "url": "https://cartilha.cert.br/fasciculos/#privacidade"
+      },
+      {
+        "nome": "Microsoft Azure",
+        "url": "https://azure.microsoft.com/pt-br/resources/cloud-computing-dictionary/what-is-vpn"
+      },
+      {
+        "nome": "Zscaler",
+        "url": "https://www.zscaler.com/br/zpedia/what-is-a-vpn"
+      }
+    ]
   },
   {
     "texto": "O que é uma vulnerabilidade de segurança?",
@@ -162,7 +270,21 @@
       "Uma senha com muitos caracteres."
     ],
     "correta": 1,
-    "explicacao": "Vulnerabilidade é uma falha ou fraqueza em um sistema que pode ser explorada por um atacante."
+    "explicacao": "Vulnerabilidade é uma falha ou fraqueza em um sistema que pode ser explorada por um atacante.",
+    "fontes": [
+      {
+        "nome": "Cartilha CERT.br (livro)",
+        "url": "https://cartilha.cert.br/livro/"
+      },
+      {
+        "nome": "WatchGuard",
+        "url": "https://www.watchguard.com/br/wgrd-news/blog/o-que-e-uma-vulnerabilidade-na-ciberseguranca"
+      },
+      {
+        "nome": "UFRN - Segurança em Redes (PDF)",
+        "url": "https://hmateriais.imd.ufrn.br/materialV2/assets/download/seguranca-em-redes/01-introducao-a-seguranca-SEGURANCA-EM-REDES-IMD.pdf"
+      }
+    ]
   },
   {
     "texto": "Por que é importante atualizar programas e sistemas operacionais?",
@@ -173,7 +295,21 @@
       "Para corrigir falhas e melhorar a segurança."
     ],
     "correta": 3,
-    "explicacao": "As atualizações corrigem vulnerabilidades conhecidas, impedindo que sejam exploradas por atacantes."
+    "explicacao": "As atualizações corrigem vulnerabilidades conhecidas, impedindo que sejam exploradas por atacantes.",
+    "fontes": [
+      {
+        "nome": "Cartilha CERT.br (computadores)",
+        "url": "https://cartilha.cert.br/fasciculos/#computadores"
+      },
+      {
+        "nome": "TecMundo",
+        "url": "https://www.tecmundo.com.br/produto/177375-voce-deve-atualizar-softwares-frequencia.htm"
+      },
+      {
+        "nome": "WeLiveSecurity (ESET)",
+        "url": "https://www.welivesecurity.com/br/2017/07/18/patches-e-atualizacoes/"
+      }
+    ]
   },
   {
     "texto": "O que é engenharia social?",
@@ -184,7 +320,21 @@
       "Criar redes sociais."
     ],
     "correta": 0,
-    "explicacao": "Na engenharia social o atacante explora a confiança e o comportamento das pessoas, em vez de falhas técnicas."
+    "explicacao": "Na engenharia social o atacante explora a confiança e o comportamento das pessoas, em vez de falhas técnicas.",
+    "fontes": [
+      {
+        "nome": "Cartilha CERT.br (golpes)",
+        "url": "https://cartilha.cert.br/fasciculos/#golpes"
+      },
+      {
+        "nome": "ESET",
+        "url": "https://www.eset.com/br/blog/cultura/o-que-e-engenharia-social/"
+      },
+      {
+        "nome": "Tray",
+        "url": "https://tray.com.br/escola/engenharia-social/"
+      }
+    ]
   },
   {
     "texto": "Qual é a diferença entre criptografia e hash?",
@@ -195,7 +345,21 @@
       "Não existe diferença técnica."
     ],
     "correta": 2,
-    "explicacao": "Dados criptografados podem ser decifrados com a chave correta. Já o hash gera uma \"impressão digital\" que não deve ser revertida."
+    "explicacao": "Dados criptografados podem ser decifrados com a chave correta. Já o hash gera uma \"impressão digital\" que não deve ser revertida.",
+    "fontes": [
+      {
+        "nome": "Cartilha CERT.br (livro)",
+        "url": "https://cartilha.cert.br/livro/"
+      },
+      {
+        "nome": "TabNews",
+        "url": "https://www.tabnews.com.br/RomeuGomesDev/criptografia-e-hashs-aplicacoes-praticas"
+      },
+      {
+        "nome": "UFES (PDF)",
+        "url": "https://mostra.inf.ufes.br/compsoc_pdc_20232/senhas_digitais/etapa1_senhas.pdf"
+      }
+    ]
   },
   {
     "texto": "O que é um ataque de força bruta?",
@@ -206,7 +370,21 @@
       "Uma técnica de backup."
     ],
     "correta": 1,
-    "explicacao": "Na força bruta o atacante testa muitas combinações de senhas ou chaves até acertar. Senhas longas e exclusivas dificultam esse ataque."
+    "explicacao": "Na força bruta o atacante testa muitas combinações de senhas ou chaves até acertar. Senhas longas e exclusivas dificultam esse ataque.",
+    "fontes": [
+      {
+        "nome": "Cartilha CERT.br (livro)",
+        "url": "https://cartilha.cert.br/livro/"
+      },
+      {
+        "nome": "Cloudflare",
+        "url": "https://www.cloudflare.com/pt-br/learning/bots/brute-force-attack/"
+      },
+      {
+        "nome": "Fortinet",
+        "url": "https://www.fortinet.com/br/resources/cyberglossary/brute-force-attack"
+      }
+    ]
   },
   {
     "texto": "Para que serve o Nmap?",
@@ -217,7 +395,17 @@
       "Descobrir dispositivos, portas e serviços em redes autorizadas."
     ],
     "correta": 3,
-    "explicacao": "O Nmap é uma ferramenta de mapeamento de redes que identifica dispositivos, portas abertas e serviços. Deve ser usada só em redes autorizadas."
+    "explicacao": "O Nmap é uma ferramenta de mapeamento de redes que identifica dispositivos, portas abertas e serviços. Deve ser usada só em redes autorizadas.",
+    "fontes": [
+      {
+        "nome": "Nmap (manual oficial)",
+        "url": "https://nmap.org/book/man.html"
+      },
+      {
+        "nome": "man7.org (manual Linux)",
+        "url": "https://www.man7.org/linux/man-pages/man1/nmap.1.html"
+      }
+    ]
   },
   {
     "texto": "O que é SQL Injection?",
@@ -228,7 +416,17 @@
       "Um tipo de cabo USB."
     ],
     "correta": 0,
-    "explicacao": "Na SQL Injection, dados manipulados enviados à aplicação alteram as consultas ao banco de dados. A defesa é validar entradas e usar consultas parametrizadas."
+    "explicacao": "Na SQL Injection, dados manipulados enviados à aplicação alteram as consultas ao banco de dados. A defesa é validar entradas e usar consultas parametrizadas.",
+    "fontes": [
+      {
+        "nome": "Check Point",
+        "url": "https://www.checkpoint.com/pt/cyber-hub/cyber-security/what-is-cyber-attack/what-is-sql-injection-sqli/"
+      },
+      {
+        "nome": "HackerDNA",
+        "url": "https://hackerdna.com/pt-br/blog/sql-injection-tutorial"
+      }
+    ]
   },
   {
     "texto": "Qual é a principal diferença entre HTTP e HTTPS?",
@@ -239,7 +437,21 @@
       "HTTP não permite carregar imagens."
     ],
     "correta": 2,
-    "explicacao": "O HTTPS é o HTTP protegido por TLS, que criptografa os dados e ajuda a autenticar o servidor."
+    "explicacao": "O HTTPS é o HTTP protegido por TLS, que criptografa os dados e ajuda a autenticar o servidor.",
+    "fontes": [
+      {
+        "nome": "Cartilha CERT.br (livro)",
+        "url": "https://cartilha.cert.br/livro/"
+      },
+      {
+        "nome": "Cloudflare (HTTP x HTTPS)",
+        "url": "https://www.cloudflare.com/pt-br/learning/ssl/why-is-http-not-secure/"
+      },
+      {
+        "nome": "Cloudflare (o que é HTTPS)",
+        "url": "https://www.cloudflare.com/pt-br/learning/ssl/what-is-https/"
+      }
+    ]
   },
   {
     "texto": "O que caracteriza um ataque DDoS?",
@@ -250,7 +462,21 @@
       "A criptografia de um único arquivo local."
     ],
     "correta": 1,
-    "explicacao": "No DDoS, muitos sistemas enviam tráfego ao mesmo tempo para sobrecarregar um serviço e deixá-lo indisponível."
+    "explicacao": "No DDoS, muitos sistemas enviam tráfego ao mesmo tempo para sobrecarregar um serviço e deixá-lo indisponível.",
+    "fontes": [
+      {
+        "nome": "Cartilha CERT.br (livro)",
+        "url": "https://cartilha.cert.br/livro/"
+      },
+      {
+        "nome": "Check Point",
+        "url": "https://www.checkpoint.com/pt/definitions/what-is-ddos/"
+      },
+      {
+        "nome": "NordVPN",
+        "url": "https://nordvpn.com/pt-br/blog/o-que-e-ataque-ddos/"
+      }
+    ]
   },
   {
     "texto": "Qual é uma atitude mais segura ao usar Wi-Fi público?",
@@ -261,7 +487,21 @@
       "Usar HTTPS, manter o dispositivo atualizado e evitar operações sensíveis em redes suspeitas."
     ],
     "correta": 3,
-    "explicacao": "Redes públicas são mais arriscadas. Use HTTPS, mantenha o dispositivo atualizado e evite operações sensíveis, como bancos."
+    "explicacao": "Redes públicas são mais arriscadas. Use HTTPS, mantenha o dispositivo atualizado e evite operações sensíveis, como bancos.",
+    "fontes": [
+      {
+        "nome": "Cartilha CERT.br (privacidade)",
+        "url": "https://cartilha.cert.br/fasciculos/#privacidade"
+      },
+      {
+        "nome": "Santander",
+        "url": "https://www.santander.com.br/blog/wi-fi-publico-riscos"
+      },
+      {
+        "nome": "Serasa",
+        "url": "https://www.serasa.com.br/premium/blog/wi-fi-publico-como-usa-lo-com-seguranca-evitar-golpes/"
+      }
+    ]
   },
   {
     "texto": "Você encontra uma falha de segurança em um site de terceiros. O que deve fazer?",
@@ -272,7 +512,21 @@
       "Tentar acessar as contas de outros usuários."
     ],
     "correta": 0,
-    "explicacao": "O correto é parar os testes e avisar o responsável (divulgação responsável). Acessar dados de terceiros ou expor a falha publicamente pode causar danos e ser ilegal."
+    "explicacao": "O correto é parar os testes e avisar o responsável (divulgação responsável). Acessar dados de terceiros ou expor a falha publicamente pode causar danos e ser ilegal.",
+    "fontes": [
+      {
+        "nome": "CERT.br",
+        "url": "https://cert.br/"
+      },
+      {
+        "nome": "TecMundo (explica divulgação responsável)",
+        "url": "https://www.tecmundo.com.br/seguranca/413739-chrome-corrige-falha-inedita-utilizada-em-ataques-criminosos-saiba-como-atualizar.htm"
+      },
+      {
+        "nome": "DEV Community (em inglês)",
+        "url": "https://dev.to/pawanjswal/how-to-report-a-security-vulnerability-responsibly-53o4"
+      }
+    ]
   }
 ]
   </script>

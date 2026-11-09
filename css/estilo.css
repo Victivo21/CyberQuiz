@@ -192,3 +192,7 @@ h2:focus-visible {
 @keyframes piscar {
   50% { opacity: 0; }
 }
+
+/* Lista de fontes no feedback */
+.fontes-titulo { margin: 8px 0 4px; font-weight: 700; }
+#listaFontes { margin: 0; padding-left: 22px; line-height: 1.6; }
