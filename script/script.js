@@ -1,16 +1,12 @@
-// 1) DADOS (carregados do JSON)
 let perguntas = [];
 
-// 2) ESTADO
 let atual = 0;
 let pontos = 0;
 let nome = "";
 
-// 3) ELEMENTOS DA PÁGINA
 const $ = (id) => document.getElementById(id);
 const telaInicio = $("inicio"), telaJogo = $("jogo"), telaFim = $("fim");
 
-// 4) FUNÇÕES
 async function carregarPerguntas() {
   try {
     const resp = await fetch("perguntas.json");
@@ -75,7 +71,7 @@ function mostrarPergunta() {
     caixa.appendChild(b);
   });
 
-  $("pergunta").focus(); // leva o foco para a nova pergunta
+  $("pergunta").focus(); 
 }
 
 function responder(escolhida) {
@@ -102,7 +98,6 @@ function responder(escolhida) {
   $("statusResposta").textContent = acertou ? "✔ Resposta correta!" : "✘ Resposta incorreta.";
   $("explicacao").textContent = p.explicacao;
 
-  // links das fontes (definidos no JSON)
   const lista = $("listaFontes");
   lista.innerHTML = "";
   const fontes = p.fontes || [];
@@ -120,7 +115,7 @@ function responder(escolhida) {
   $("feedback").classList.remove("hidden");
 
   $("btnProxima").classList.remove("hidden");
-  $("btnProxima").focus(); // foco no botão seguinte para quem usa teclado
+  $("btnProxima").focus(); 
 }
 
 function proxima() {
@@ -132,7 +127,6 @@ function proxima() {
   }
 }
 
-// ----- Ranking (sessionStorage) -----
 function lerRanking() {
   try {
     return JSON.parse(sessionStorage.getItem("ranking") || "[]");
@@ -175,11 +169,10 @@ function mostrarResultado() {
 }
 
 function reiniciar() {
-  mostrar(telaInicio);   // volta ao início sem recarregar a página
+  mostrar(telaInicio);   
   $("nomeJogador").focus();
 }
 
-// ----- Efeito "chuva digital" (decorativo) -----
 function iniciarChuva() {
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
@@ -198,7 +191,7 @@ function iniciarChuva() {
   window.addEventListener("resize", ajustar);
 
   setInterval(() => {
-    ctx.fillStyle = "rgba(0, 0, 0, 0.08)";   // rastro que vai sumindo
+    ctx.fillStyle = "rgba(0, 0, 0, 0.08)";   
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     ctx.fillStyle = "#00ff41";
     ctx.font = tam + "px monospace";
@@ -212,7 +205,6 @@ function iniciarChuva() {
   }, 50);
 }
 
-// 5) EVENTOS
 $("btnComecar").addEventListener("click", comecar);
 $("btnProxima").addEventListener("click", proxima);
 $("btnReiniciar").addEventListener("click", reiniciar);
@@ -220,6 +212,5 @@ $("nomeJogador").addEventListener("keydown", (e) => {
   if (e.key === "Enter") comecar();
 });
 
-// 6) INÍCIO
 iniciarChuva();
 carregarPerguntas();
