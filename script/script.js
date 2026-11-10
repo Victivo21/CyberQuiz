@@ -101,6 +101,22 @@ function responder(escolhida) {
 
   $("statusResposta").textContent = acertou ? "✔ Resposta correta!" : "✘ Resposta incorreta.";
   $("explicacao").textContent = p.explicacao;
+
+  // links das fontes (definidos no JSON)
+  const lista = $("listaFontes");
+  lista.innerHTML = "";
+  const fontes = p.fontes || [];
+  fontes.forEach(f => {
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.href = f.url;
+    a.textContent = f.nome;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    li.appendChild(a);
+    lista.appendChild(li);
+  });
+  $("fonteWrap").classList.toggle("hidden", fontes.length === 0);
   $("feedback").classList.remove("hidden");
 
   $("btnProxima").classList.remove("hidden");
