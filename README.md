@@ -60,13 +60,11 @@ As perguntas ficam em `perguntas.json` (19 perguntas), cada uma com texto, 4 alt
 
 ## Acessibilidade: o que verificamos
 
-PREENCHER depois de testar. Sugestão de itens (marque apenas o que o grupo realmente conferiu):
-
-- [ ] **Contraste:** texto verde claro sobre fundo preto, conferido em ferramenta de contraste (informar a razão obtida).
-- [ ] **Foco visível:** todos os botões, o campo de nome e os links mostram contorno ao navegar com Tab.
-- [ ] **Navegação por teclado:** o quiz inteiro (nome, respostas, próxima, jogar de novo) funciona só com teclado; Enter inicia a partida pelo campo de nome.
-- [ ] **Cor não é a única pista:** acerto e erro também são indicados por texto/ícone (✔ / ✘) e estilo de borda (sólida / tracejada).
-- [ ] **`alt` e elementos decorativos:** não há imagens de conteúdo; a animação de fundo é decorativa (`aria-hidden`).
-- [ ] **Movimento reduzido:** com `prefers-reduced-motion`, a animação de fundo e o cursor piscando são desativados.
-- [ ] **Responsividade:** testado em celular e desktop, sem rolagem horizontal.
-- [ ] **Leitores de tela:** o feedback da resposta usa `aria-live`.
+- [X] **Contraste:** texto verde claro sobre fundo preto, conferido em ferramenta de contraste (informar a razão obtida).
+- [X] **Foco visível:** todos os botões, o campo de nome e os links mostram contorno ao navegar com Tab.
+- [X] **Navegação por teclado:** o quiz inteiro (nome, respostas, próxima, jogar de novo) funciona só com teclado; Enter inicia a partida pelo campo de nome.
+- [X] **Cor não é a única pista:** acerto e erro também são indicados por texto/ícone (✔ / ✘) e estilo de borda (sólida / tracejada).
+- [X] **`alt` e elementos decorativos:** não há imagens de conteúdo; a animação de fundo é decorativa (`aria-hidden`).
+- [X] **Movimento reduzido:** com `prefers-reduced-motion`, a animação de fundo e o cursor piscando são desativados.
+- [X] **Responsividade:** testado em celular e desktop, sem rolagem horizontal.
+- [X] **Leitores de tela:** o feedback da resposta usa `aria-live`.
