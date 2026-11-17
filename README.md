@@ -2,7 +2,7 @@
 
 Trabalho final em grupo da disciplina de **Desenvolvimento Front-End**: um site de quiz com perguntas sobre tecnologia.
 
-**Site publicado:** COLOQUE-AQUI-O-LINK-DO-SITE (HTTPS)
+**Site publicado:** https://victivo21.github.io/CyberQuiz/
 
 ## Tema
 
