@@ -152,12 +152,9 @@ h2:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
   #chuva { display: none; }
-  @media (prefers-reduced-motion: reduce) {
-  * { transition: none !important; }
-  #chuva { display: none; }
   .logo-cursor { animation: none; }
 }
-}
+
 /* Logo CyberQuiz */
 .titulo-boasvindas {
   font-size: 1rem;
@@ -196,3 +193,15 @@ h2:focus-visible {
 /* Lista de fontes no feedback */
 .fontes-titulo { margin: 8px 0 4px; font-weight: 700; }
 #listaFontes { margin: 0; padding-left: 22px; line-height: 1.6; }
+
+/* Telas pequenas: reduz espaços e o logo para não estourar a largura */
+@media (max-width: 480px) {
+  body { padding: 8px; }
+  .quiz { padding: 18px; }
+  h1 { font-size: 1.3rem; }
+  h2 { font-size: 1.05rem; }
+  .logo { font-size: 1.15rem; letter-spacing: 1px; padding: 2px 6px; }
+  .placar { font-size: 2.2rem; }
+  .botao { width: 100%; }
+  .rodape { justify-content: stretch; }
+}
