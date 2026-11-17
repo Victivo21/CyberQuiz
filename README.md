@@ -12,10 +12,10 @@ Cibersegurança
 
 | Integrante | Papel |
 |---|---|
-| Bruno Tadeu | PREENCHER (ex.: HTML / estrutura) |
-| Felipe Avelino | PREENCHER (ex.: CSS / design) |
-| Victor dos Santos | PREENCHER (ex.: JavaScript / lógica) |
-| Vinicius Conceição | PREENCHER (ex.: perguntas, README e testes) |
+| Bruno Tadeu | HTML/CSS/Javascript/Perguntas/README |
+| Felipe Avelino | HTML/CSS/Javascript/Perguntas/README |
+| Victor dos Santos | HTML/CSS/Javascript/Perguntas/README |
+| Vinicius Conceição | HTML/CSS/Javascript/Perguntas/README |
 
 ## Descrição
 
